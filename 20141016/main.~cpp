@@ -76,7 +76,7 @@ void __fastcall TMainForm::ToolButton5Click(TObject *Sender)
 TMDIChild *TheChild;
 if (ActiveMDIChild)
 {
-TheChild=(TMDChild*)ActiveMDIChild;
+TheChild=(TMDIChild*)ActiveMDIChild;
 if (SavePictureDialog1->Execute())
 {
 TheChild->Image1->Picture->SaveToFile(SavePictureDialog1->FileName+".bmp");
